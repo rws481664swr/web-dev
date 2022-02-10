@@ -1,0 +1,101 @@
+.wd-base-styles {
+    background: black;
+    list-style: none;
+    color: white;
+    font-family: arial, sans-serif;
+}
+
+.wd-tab {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+    border-width: 16px;
+    padding: 16px;;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wd-hlt-tab {
+    padding:0;
+    border-bottom-style: solid;
+    border-width: 4px;
+    /*padding-bottom: 16px;*/
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    /*border-bottom-width: medium;*/
+    font-size: 15px;
+    color: rgb(29, 161, 242);
+    border-bottom-color: rgb(29, 161, 242);
+}
+
+
+.wd-c-dots {
+    /*float: right;*/
+    right: 10px;
+    color: rgb(47, 51, 54);
+    border: black;
+    font-size: 13px;
+}
+
+.wd-pad-16{
+    padding:16px;
+}
+/*C-STYLING*/
+
+.wd-c-trend-text {
+    font-size: 13px;
+}
+
+
+.wd-c-main-text {
+
+
+}
+
+.wd-c-link {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.wd-image-border-round{
+    border-radius: 20px;
+}
+
+
+
+.wd-c-tweet-ct-text {
+    font-size: 13px;
+
+}
+
+.wd-expl-c {
+    color: rgb(110, 118, 125);
+}
+
+/*END C STYLING*/
+
+.wd-pad-explore {
+    padding-left: 16px;
+    padding-right: 16px;
+    border-left-width: 16px;
+    border-right-width: 16px;
+}
+
+.wd-grbdr {
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: thin;
+}
+
+
+.wd-expl-d {
+}
+
+.wd-expl-e {
+}
+
+
