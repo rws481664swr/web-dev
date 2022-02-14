@@ -5,6 +5,16 @@
 
 }
 
+.wd-outer-content-div{
+	flex-shrink: 1;
+	display: flex;
+	border-color : rgb(47,51,54);
+	border-style: solid;
+	border-width: 1px;
+	justify-content: left;
+}
+
+
 .wd-margin-0{
 	margin-right: 0px;
 }
@@ -14,6 +24,12 @@
 }
 .wd-border-width-1{
 	border-width: 1px;
+}
+.wd-bookmark-base{
+	text-decoration:none;
+ }
+.wd-a{
+	text-decoration: inherit;
 }
 
 .wd-bk-border{
@@ -33,10 +49,7 @@
 	border-radius: 40px;
 
 }
-a{
-	text-decoration:none;
-	color:darkgrey;
-}
+
 .wd-width-lte-506{
 	max-width: 506px;
 }
@@ -52,7 +65,7 @@ font-size: 	12px;
 .wd-font-15{
 font-size: 	15px;
 }
-.wd-img-circle{
+.wd-avatar{
 	border-radius: 45px;
 }
 
@@ -104,7 +117,7 @@ font-size: 	15px;
 	border-left-width: 6px;
 }
 .wd-w12{
-	padding: 12px;
+	padding: 6px;
 }
 .wd-just-center{
 	justify-content: center;
@@ -121,34 +134,6 @@ font-size: 	15px;
 	padding-top: 12px;
 	padding-bottom  :12px;
 }
-/*
-<!--<div class="wd-light-grey wd-12-below wd-flex-shrink wd-display-flex wd-width-lte-506 wd-just-even ">-->
-<!--	<a href="#">-->
-<!--		<div class="wd-display-flex-center">-->
-<!--			<span class="wd-w12">&#128173;</span>-->
-<!--			<span class="wd-w12">22</span>-->
-<!--		</div>-->
-<!--	</a>-->
-<!--	<a href="#">-->
-<!--		<div class="wd-display-flex-center ">-->
-<!--			<div  class="wd-w12">Repost</div>-->
-<!--			<div class="wd-w12">9</div>-->
-<!--		</div>-->
-<!--	</a>-->
-<!--	<a href="#">-->
-
-<!--		<div class="wd-red wd-display-flex-center">-->
-<!--			<div class="wd-w12">-->
-<!--				&hearts;</div>-->
-<!--			<div class=" wd-w12">37</div>-->
-<!--		</div>-->
-<!--	</a>-->
-<!--	<a href="#">-->
-<!--		<div class="wd-w12 wd-display-flex-center">-->
-<!--			<div class="">Share</div>-->
-<!--		</div>-->
-<!--	</a>-->
-<!--</div>-->*/
 .wd-12-top{
 	padding-top: 12px;
 }
@@ -171,7 +156,9 @@ font-size: 	15px;
 .wd-flex-shrink{
 	flex-shrink: 1;
 }
-
+.wd-max-fit{
+	max-width: fit-content;
+}
 .wd-round-40{
 	border-radius: 40px;
 }
@@ -188,5 +175,5 @@ border-top-left-radius: 40px;
 .wd-display-flex-center{display: flex;
 	flex-shrink:1;
 	justify-content: center;}
-.wd-display-flex-space-btwn{}
-.wd-display-flex-space-btwnx{}
+/*.wd-display-flex-space-btwn{}*/
+/*.wd-display-flex-space-btwnx{}*/
