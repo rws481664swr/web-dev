@@ -88,13 +88,8 @@ font-size: 	15px;
 .wd-light-grey{
 	color:lightgrey;
 }
-.wd-12bot{
-	padding-bottom: 12px;
-}
 
-.wd-12-below{
-	padding-top:12px;
-}
+
 .wd-just-left{
 	justify-content: left;
 }
@@ -130,16 +125,8 @@ font-size: 	15px;
 .wd-display-flex{
 	display: flex;
 }
-.wd-12-top-btm{
-	padding-top: 12px;
-	padding-bottom  :12px;
-}
-.wd-12-top{
-	padding-top: 12px;
-}
-.wd-font-15{
-	font-size:15px;
-}
+
+
 
 .wd-maxwidth-506{
 	max-width: 506px;
