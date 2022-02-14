@@ -1,0 +1,32 @@
+#!/bin/sh
+
+len=$1
+shift
+width=$1
+shift
+itr=$1
+if [ -z $len ]
+then 
+	echo "No Arguments Given!"
+	exit 1
+elif [ -z $width ]
+then
+	width=$1
+fi
+
+if [ -z $itr ] 
+then
+	itr=1
+fi
+
+SUFFIX="$len/$width"
+TARGET="$(dirname "$0")/picsum/$SUFFIX"
+mkdir -p "$TARGET"
+URL="https://picsum.photos/$SUFFIX"
+EXT="-${len}x${width}_.jpg"
+echo $len $width $itr
+for i in `seq 1 $itr`; 
+do 
+	RAND=$(($RANDOM%10000))
+	wget -O "$TARGET/img$RAND$EXT" $URL
+ done
