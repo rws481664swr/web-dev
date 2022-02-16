@@ -1,0 +1,63 @@
+.wd-grey{
+    color: grey;
+}
+.wd-search-bar-white{
+
+}
+.wd-search-div{
+    border-style: hidden;
+    border-width: 0px;
+    border-color: white;
+}
+.wd-border-hidden{
+    border:hidden;
+}
+/*.input-group-text.wd-border-hide{
+    border:hidden;
+}*/
+/*.input-group.wd-inputhide{*/
+/*    border-left-style: hidden;*/
+/*    border-color: pink;*/
+/*}*/
+.wd-brder-hide-rt{
+	/*border-style-right:hidden;*/
+	/*border-color: white;*/
+	border-right:hidden;
+}
+.input-group-text.wd-left-search-border{
+	/*    border-right-color: white;*/
+    /*border-top-left-radius: 20px;*/
+    /*border-style: solid;*/
+    /*border-width: 1px;*/
+    /*border-left-color: red;*/
+    /*border-bottom-left-radius: 20px;*/
+}
+ .wd-input-group-search{
+
+    border-color: grey;
+    border-style: solid;
+    border-width: 1px;
+ }
+.input-group-text.wd-search-input-group-text{
+
+
+}
+.wd-bg-clear{
+    background:transparent;
+}
+.wd-grey-border {
+    border-color:grey;
+    border-style: solid;
+    border-top-left-radius: 45px;
+}
+/*.form-control.wd-search-form-control{*/
+/*    border-width: 0px;*/
+/*}*/
+/*.form-control.wd-hideleft{*/
+/*	border:;*/
+/*}*/
+/*.form-control.wd-fc{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;	
+}*/
+
