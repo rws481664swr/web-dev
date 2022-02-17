@@ -1,24 +1,28 @@
-.wd-grey{
-    color: grey;
-}
+
 .wd-search-bar-white{
 
 }
 .wd-search-div{
-    border-style: hidden;
-    border-width: 0px;
-    border-color: white;
-}
-.wd-border-hidden{
-    border:hidden;
-}
-
-
-.wd-bg-clear{
-    background:transparent;
+     border-color: white;
 }
 .wd-grey-border {
     border-color:grey;
     border-style: solid;
     border-top-left-radius: 45px;
+}
+
+
+.wd-faz {
+    vertical-align:  central;
+}
+.fa-2x {
+    vertical-align: middle;
+}
+
+.wd-ab{
+    font-family: Arial-Black;
+}
+
+.wd-light-grey-tt{
+    color: #999595;
 }
