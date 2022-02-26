@@ -1,0 +1,29 @@
+.wd-text-grey{
+    color:rgb(75,75,75)
+}
+
+.wd13{
+    font-size: 13px;
+}
+.wd-pad12{
+    padding:12px;
+}
+.wd-rounded-all{
+    border-radius:30px;
+}
+.wd-rounded-top{
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+}
+.wd-border-1px.border-1{
+    border-color:rgb(75,75,75);
+}
+
+.wd-active-side-nav.active{
+    font-weight: bold;
+}
+
+
+.wd-content-img {
+
+}
