@@ -62,7 +62,7 @@ if (!false1) {
 }
 
 //modified later TODO verify this
-let loggedIn = true;
+const loggedIn = true;
 const greeting = loggedIn ? 'Welcome!' : 'Please login';
 console.log(greeting)
 
@@ -166,8 +166,8 @@ const username = "alice";
 const greeting1 = `Welcome home ${username}`;
 console.log(greeting1);
 /*const*/
-loggedIn = false;
-const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
+const loggedIn2 = false;
+const greeting2 = `Logged in: ${loggedIn2 ? "Yes" : "No"}`;
 console.log(greeting2)
 
 const init = () => {
