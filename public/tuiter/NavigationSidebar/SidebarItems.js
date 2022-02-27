@@ -9,6 +9,6 @@ export default [
     {fa_classes: 'fa-solid fa-envelope', href: '/tuiter/messages.html', text: 'Messages'},
     {fa_classes: 'fa-solid fa-bookmark', href: '/tuiter/bookmarks.html', text: 'Bookmarks'},
     {fa_classes: 'fa-solid fa-list', href: '/tuiter/lists.html', text: 'Lists'},
-    {fa_classes: 'fa-solid fa-user', href: '/tuiter/user.html', text: 'Profile'}
+    {fa_classes: 'fa-solid fa-user', href: '/tuiter/user.html', text: 'Profile'},
 ]
 console.log(`loaded module: ${import.meta.url}`)

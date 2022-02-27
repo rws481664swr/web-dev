@@ -1,10 +1,10 @@
 import {icons} from '../common/index.js'
 
-export default (active)=>(e)=> {
+export default (e,active)=> {
     let id=e.text.trim().toLowerCase()
     return `<a 
         id="wd-sidebar-${id}" 
-        class="${id===active? 'wd-active-side-nav':''} list-group-item d-flex justify-content-start " 
+        class="${id===active? 'active wd-active-side-nav':''} list-group-item d-flex justify-content-start " 
         href="${e.href}"
     >
     <div>${icons(e.fa_classes, "pe-2")}</div>

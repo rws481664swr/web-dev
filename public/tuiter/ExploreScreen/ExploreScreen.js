@@ -1,6 +1,6 @@
-import NavigationSidebar from "../NavigationSidebar";
+import NavigationSidebar from "../NavigationSidebar/index.js";
 import ExploreComponent from "./ExploreComponent.js";
-import WhoToFollowList from "../WhoToFollowList";
+import WhoToFollowList from "../WhoToFollowList/index.js";
 
 
 ;(function ($) {
@@ -27,20 +27,4 @@ import WhoToFollowList from "../WhoToFollowList";
 
 
 })($);
-const forYou = $("#nav-tab-foryou")
-forYou.css({
-    borderBottomColor:'#24a0ed',
-    borderBottomWidth:"2px",
-    borderBottomStyle: "solid"
-})
-$("#wd-gear").css({
-    color:"white",
-    borderBottomWidth:'0px'
-})
-$("#wd-search-div").css({borderColor:"black"})
-$("#wd-gear").css({})
-$("#wd-mag-glass").css({})
 
-//
-// .addClass("active"  )
-// $("#nav-tab-foryou").addClass("disabled"  )

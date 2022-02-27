@@ -31,7 +31,12 @@
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }
-
+.wd-ps-6{
+    padding-left: 6px;
+}
+.wd-pe-6{
+    padding-right: 6px;
+}
 /*.wd-just-start{*/
 /*    justify-content: start;*/
 /*}*/
