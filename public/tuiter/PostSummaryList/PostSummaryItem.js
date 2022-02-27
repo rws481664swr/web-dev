@@ -18,7 +18,7 @@ const PostSummaryItem = (post) => {
         </div>
         <div>
             ${userName} ${icons(styling.circle.icon)}
-        <span class="${styling.time}"> &nbsp; ${time}</span>
+        <span class="${styling.time}"> - ${time}</span>
         </div>
         <div>  
             ${title}
