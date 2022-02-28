@@ -1,11 +1,7 @@
-// import './vendors/bootstrap/css/bootstrap.min.css';
-// import './vendors/bootstrap/bootstrap.min.css';
-// import './vendors/fontawesome/css/all.min.css';
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './App.css';
-import {BrowserRouter, Route } from "react-router-dom";
 import {BrowserRouter, Route} from "react-router-dom";
 import Labs from "./components/Labs";
 import HelloWorld from "./components/HelloWorld";
