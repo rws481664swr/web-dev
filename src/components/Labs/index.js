@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import Classes from "./Classes";
 import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
+import TodoList from "./Todo/TodoList";
 
 function Labs() { return(
     <>
@@ -10,6 +11,7 @@ function Labs() { return(
         <ConditionalOutput/>
         <Styles/>
         <Classes/>
+        <TodoList/>
     </>
 )};
 export default Labs;
