@@ -1,0 +1,42 @@
+[
+  {
+    "text": "",
+    "id": "tuiter",
+    "icon": "fab fa-twitter"
+  },
+  {
+    "text": "Home",
+    "id": "home",
+    "icon": "fa-solid fa-house-chimney"
+  },
+  {
+    "text": "Explore",
+    "id": "explore",
+    "icon": "fab fa-hashtag"
+  },
+  {
+    "text": "Notifications",
+    "id": "notifications",
+    "icon": "fa-solid fa-bell"
+  },
+  {
+    "text": "Messages",
+    "id": "messages",
+    "icon": "fa-solid fa-envelope"
+  },
+  {
+    "text": "Bookmarks",
+    "id": "bookmarks",
+    "icon": "fa-solid fa-bookmark"
+  },
+  {
+    "text": "Lists",
+    "id": "lists",
+    "icon": "fa-solid fa-list"
+  },
+  {
+    "text": "Profile",
+    "id": "profile",
+    "icon": "fa-solid fa-user"
+  }
+]

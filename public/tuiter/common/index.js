@@ -5,3 +5,4 @@ export const icons= (fa_classes, classes="", id="")=>`
 `
 export const nbsp = "&nbsp;"
 export const checkedCircle= ()=> icons("fa-solid fa-circle-check")
+``
