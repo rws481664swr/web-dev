@@ -58,6 +58,12 @@ code {
   color:rgb(75,75,75)
 }
 
+.wd-tl16-br6{
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
 
 .wd-bottom-border-1.border-bottom{
   border-color:rgb(75,75,75);

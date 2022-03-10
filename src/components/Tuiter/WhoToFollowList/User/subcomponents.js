@@ -5,7 +5,7 @@ export const UserNameComponent = ({user}) => {
     return (
         <div>
             <span className="fw-bold">
-                                {user} {" "}
+                {user} {" "}
             </span>
             <CheckedCircle/>
         </div>

@@ -2,9 +2,8 @@ import {ContentComponent, ReactionComponent, TweetComponent} from './PostListCom
 
 
 function AvatarComponent({src}) {
-    // console.log(avatarIcon)
     return (<>
-        <img className="me-2 rounded-circle" height="48px" width="48px" src={ src}/>
+        <img className={`m-2  rounded-circle`}height="48px" width="48px" src={ src}/>
         </>
     );
 }
@@ -12,7 +11,7 @@ function AvatarComponent({src}) {
 const PostListItem = ({post:{type, avatarIcon, tweet, image, content, meta}}) => {
     return (
         <>
-            <div className=" d-flex justify-content-start ps-2 pt-2 pe-1 pb-1 ms-4 me-2 wd-border-1px ">
+            <div className=" d-flex justify-content-start  ms-4 me-2 wd-border-1px ">
             <AvatarComponent src={avatarIcon}/>
                 <div className='me-2'>
                     <TweetComponent tweet={tweet}/>
