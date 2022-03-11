@@ -1,4 +1,3 @@
-import NavigationSidebar from "../NavigationSidebar";
 import ExploreComponent from "./ExploreComponent.js";
 import WhoToFollowList from "../WhoToFollowList";
 import {ThreeCols} from "../common";

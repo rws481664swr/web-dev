@@ -1,5 +1,5 @@
 
-function More() {
+function More({href=''}) {
     function MoreIcon(){
         return  ( <div className="fa-stack">
             <i style={{fontSize: '1em'}} className="fas fa-solid fa-circle fa-stack-1x"/>
@@ -7,7 +7,7 @@ function More() {
         </div>)
     }
     return (
-        <a className="list-group-item  d-flex justify-content-start " href="#">
+        <a className="list-group-item  d-flex justify-content-start " href={`${href}`}>
             <MoreIcon/>
             <div className="d-none  d-xl-block  align-self-start align-self-center align-self-middle ">More</div>
         </a>
