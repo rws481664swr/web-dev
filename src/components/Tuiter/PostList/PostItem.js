@@ -3,7 +3,7 @@ import {ContentComponent, ReactionComponent, TweetComponent} from './PostListCom
 
 function AvatarComponent({src}) {
     return (<>
-        <img className={`m-2  rounded-circle`}height="48px" width="48px" src={ src}/>
+        <img className={`m-2  rounded-circle`}height="48px" width="48px" src={ src} alt={ src}/>
         </>
     );
 }
