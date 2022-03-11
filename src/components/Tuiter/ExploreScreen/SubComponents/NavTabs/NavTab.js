@@ -1,5 +1,5 @@
-const NavTab = ({active, text,}) => {
-    const text_lower = text.text.toLowerCase()
+const NavTab = ({active, text}) => {
+    const text_lower = text.toLowerCase()
     return (
         <li key={text} className={`nav nav-item`}>
             <a href={`#${text_lower}`}
