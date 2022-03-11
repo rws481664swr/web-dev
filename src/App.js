@@ -6,7 +6,7 @@ import React from 'react'
 // import * as rr from "react-router";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {HelloWorld, Labs, Tuiter} from "./components/index.js";
-import {HomeScreen, UnderConstruction} from './components/Tuiter/Screens.js'
+import {HomeScreen, ExploreScreen UnderConstruction} from './components/Tuiter/Screens.js'
 
 function App() {
 
@@ -15,9 +15,6 @@ function App() {
             <div className="container">
                 <Routes>
                     <Route path={'/'} exact={true} element={<Labs/>}/>
-                    <Route path={'labs'} exact={true} element={<Labs/>}/>
-                    {/*    <Labs/>*/}
-                    {/*</Route>*/}
 
                     <Route path={"hello"} exact={true} element={<HelloWorld/>}/>
 
@@ -25,7 +22,7 @@ function App() {
                     <Route path={"tuiter"} exact={true} element={<Tuiter/>}/>
 
 
-                    {/*<Route path={"/tuiter/explore"} exact={true} element={ExploreScreen}/>*/}
+                    <Route path={"/tuiter/explore"} exact={true} element={ExploreScreen}/>
                     <Route path={"tuiter/home"} exact={true} element={<HomeScreen/>}/>
 
 
