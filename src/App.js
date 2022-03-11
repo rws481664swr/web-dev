@@ -2,49 +2,46 @@ import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
 import './App.css';
-import {BrowserRouter, Route} from "react-router-dom";
-import {Tuiter,HelloWorld,Labs} from "./components";
-import {ExploreScreen,HomeScreen,UnderConstruction} from './components/Tuiter/Screens'
-import Test from './components/Tuiter/ExploreScreen/ExploreComponent'
+import React from 'react'
+// import * as rr from "react-router";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {HelloWorld, Labs, Tuiter} from "./components";
+import {HomeScreen, UnderConstruction} from './components/Tuiter/Screens'
+
 function App() {
+
     return (
         <BrowserRouter>
             <div className="container">
-                <Route path={["/", '/labs']} exact={true} component={Labs}/>
+                <Routes>
+                    <Route path={'/'} exact={true} element={<Labs/>}/>
+                    <Route path={'labs'} exact={true} element={<Labs/>}/>
+                    {/*    <Labs/>*/}
+                    {/*</Route>*/}
 
-                <Route path={"/hello"} exact={true} component={HelloWorld}/>
-
-
-                <Route path={"/tuiter"} exact={true} component={Tuiter}/>
-
-
-                <Route path={"/tuiter/explore"} exact={true}   component={ExploreScreen}/>
-                <Route path={"/tuiter/home"} exact={true} component={ HomeScreen} />
+                    <Route path={"/hello"} exact={true} element={<HelloWorld/>}/>
 
 
-                <Route path={"/test"} exact={true} component={Test } />
+                    <Route path={"/tuiter"} exact={true} element={<Tuiter/>}/>
 
 
+                    {/*<Route path={"/tuiter/explore"} exact={true} element={ExploreScreen}/>*/}
+                    <Route path={"/tuiter/home"} exact={true} element={<HomeScreen/>}/>
 
 
-                {/*Dummy Routes*/}
-                {
-                    ['notifications','bookmarks', 'messages' ,'lists', 'profile', 'more']
-                         .map(pagename=>
-                        <Route key={`route-${pagename}`} path={`/tuiter/${pagename}` }>
-                            <UnderConstruction name={pagename}/>
-                        </Route>)
-                }
+                    {/*Dummy Routes*/}
+                    {
+                        ['notifications', 'bookmarks', 'messages', 'lists',  'profile', 'more']
+                            .map(pagename =>
+                                <Route key={`route-${pagename}`} path={`/tuiter/${pagename}`}
+                                       element={<UnderConstruction name={pagename}/>}/>
+                            )
+                    }
 
-
-
+                </Routes>
             </div>
         </BrowserRouter>
     );
 }
-
-//{/*<Route path={['/hello']} exact={true} element={<HelloWorld/>}/>*/}
-
-//                  {/*<Route path={['/tuiter']} exact={true} element={<Tuiter />}/>*/}
 
 export default App;
