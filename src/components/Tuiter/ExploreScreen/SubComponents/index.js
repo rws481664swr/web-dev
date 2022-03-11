@@ -1,4 +1,3 @@
-import React from "react";
 import SearchField from './SearchField'
 import ImageTextComponent from './ImageTextComponent'
 import NavTabs from './NavTabs'
