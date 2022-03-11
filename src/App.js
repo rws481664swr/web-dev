@@ -15,6 +15,7 @@ function App() {
             <div className="container">
                 <Routes>
                     <Route path={'/'} exact={true} element={<Labs/>}/>
+                    <Route path={'/labs'} exact={true} element={<Labs/>}/>
 
                     <Route path={"/hello"} exact={true} element={<HelloWorld/>}/>
 
