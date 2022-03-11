@@ -5,7 +5,8 @@ import {HandleComponent, UserNameComponent} from "./subcomponents";
      return (
         <>
             <img height="48px" width="48px" className={"align-center rounded-circle me-2"}
-                 src={avatarIcon}/>
+                 src={avatarIcon}
+                alt={avatarIcon}/>
             <div className={"align-self-center"}>
                 <UserNameComponent user={userName}/>
                 <HandleComponent handle={handle}/>

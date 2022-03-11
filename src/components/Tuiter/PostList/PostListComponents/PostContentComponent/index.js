@@ -13,7 +13,7 @@ function ContentImageComponent({src, text}){
     const rounding =text? "wd-border-round-top-only wd-bottom-border-gray": " wd-rounded-all"
     return(
         <img className={` wd-bottom-border-gray ${rounding}`}
-             src={src} width="100%" height="auto"/>
+             src={src} alt={src} width="100%" height="auto"/>
     )
 }
 
