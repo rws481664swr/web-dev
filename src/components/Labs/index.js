@@ -8,7 +8,10 @@ import TodoList from "./Todo/TodoList";
 function Labs() { return(
     <>
         <h1>Labs</h1>
-        <ConditionalOutput/>
+            <Link to="/hello">Hello</Link> |
+            <Link to="/tuiter">Tuiter</Link>
+
+            <ConditionalOutput/>
         <Styles/>
         <Classes/>
         <TodoList/>
