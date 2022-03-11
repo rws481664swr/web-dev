@@ -16,14 +16,14 @@ function App() {
                 <Routes>
                     <Route path={'/'} exact={true} element={<Labs/>}/>
 
-                    <Route path={"hello"} exact={true} element={<HelloWorld/>}/>
+                    <Route path={"/hello"} exact={true} element={<HelloWorld/>}/>
 
 
-                    <Route path={"tuiter"} exact={true} element={<Tuiter/>}/>
+                    <Route path={"/tuiter"} exact={true} element={<Tuiter/>}/>
 
 
-                    <Route path={"tuiter/explore"} exact={true} element={ExploreScreen}/>
-                    <Route path={"tuiter/home"} exact={true} element={<HomeScreen/>}/>
+                    <Route path={"/tuiter/explore"} exact={true} element={ExploreScreen}/>
+                    <Route path={"/tuiter/home"} exact={true} element={<HomeScreen/>}/>
 
 
                     {/*Dummy Routes*/}
