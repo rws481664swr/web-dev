@@ -1,6 +1,6 @@
 import items from "./items.json";
-import NavigationSidebarItem from "./NavigationSidebarItem";
-import More from './More'
+import NavigationSidebarItem from "./NavigationSidebarItem.js";
+import More from './More.js'
 function NavList({active}) {
     return (
 

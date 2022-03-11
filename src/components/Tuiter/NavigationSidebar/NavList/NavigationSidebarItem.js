@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import {NavIcon,NavText} from "./NavSubComponents";
+import {NavIcon,NavText} from "./NavSubComponents.js";
 
 const NavigationSidebarItem = ({li_info:{id, text, icon}, active}) => {
     return (

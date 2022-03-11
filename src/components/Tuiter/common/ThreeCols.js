@@ -1,4 +1,4 @@
-import NavigationSidebar from "../NavigationSidebar";
+import NavigationSidebar from "../NavigationSidebar/index.js";
 
 const Empty = () => {
     return (<></>)

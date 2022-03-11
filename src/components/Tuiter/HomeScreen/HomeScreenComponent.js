@@ -1,5 +1,5 @@
-import PostList from "../PostList";
-import {Span} from "../common";
+import PostList from "../PostList/index.js";
+import {Span} from "../common/index.js";
 
 const HomeScreenComponent = ()=>{
 return (

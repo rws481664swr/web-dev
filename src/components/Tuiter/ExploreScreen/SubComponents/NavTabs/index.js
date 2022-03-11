@@ -1,5 +1,5 @@
 import tabs from './tabs.json'
-import NavTab from './NavTab'
+import NavTab from './NavTab.js'
 const NavTabs = ({active="for you"})=>{
     return (
         <ul className={"nav nav-tabs mb-2 "}>

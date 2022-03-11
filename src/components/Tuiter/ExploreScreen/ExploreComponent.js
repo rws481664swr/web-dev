@@ -1,6 +1,6 @@
 import React from "react";
-import PostSummaryList from "../PostSummaryList";
-import {ImageTextComponent, NavTabs, SearchField} from './SubComponents'
+import PostSummaryList from "../PostSummaryList/index.js";
+import {ImageTextComponent, NavTabs, SearchField} from './SubComponents/index.js'
 
 const ExploreComponent = () => {
     return (

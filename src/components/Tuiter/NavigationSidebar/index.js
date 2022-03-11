@@ -1,6 +1,6 @@
 import React from "react";
-import {TweetBtn} from "./TweetBtn";
-import NavList from "./NavList";
+import {TweetBtn} from "./TweetBtn.js";
+import NavList from "./NavList/index.js";
 
 const NavigationSidebar = ({active = 'explore'}) => {
     return (

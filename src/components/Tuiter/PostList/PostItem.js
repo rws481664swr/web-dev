@@ -1,4 +1,4 @@
-import {ContentComponent, ReactionComponent, TweetComponent} from './PostListComponents'
+import {ContentComponent, ReactionComponent, TweetComponent} from './PostListComponents/index.js'
 
 
 function AvatarComponent({src}) {

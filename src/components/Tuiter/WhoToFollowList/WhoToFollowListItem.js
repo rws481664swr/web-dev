@@ -1,5 +1,5 @@
 import React from "react";
-import UserComponent from "./User";
+import UserComponent from "./User/index.js";
 
 
 const WhoToFollowListItem = ({who}) => {

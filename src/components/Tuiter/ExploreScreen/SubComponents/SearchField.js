@@ -1,5 +1,5 @@
 import React from "react";
-import {Span} from "../../common";
+import {Span} from "../../common/index.js";
 
 const MagGlass = () => <i className="  fa fa-search wd-fa-search-gr  wd-mag-glass"/>
 const SearchTextField = ({className}) => <input type="text" className={className} placeholder="Search Twitter"/>

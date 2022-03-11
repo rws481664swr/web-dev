@@ -1,5 +1,5 @@
 import React from "react";
-import {PostSummaryImage, PostSummaryText} from './PostSummaryListComponents';
+import {PostSummaryImage, PostSummaryText} from './PostSummaryListComponents/index.js';
 
 
 const PostSummaryItem = ({post: {topic, userName, time, image, title}}) => {

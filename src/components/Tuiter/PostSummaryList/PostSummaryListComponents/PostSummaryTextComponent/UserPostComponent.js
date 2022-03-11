@@ -1,4 +1,4 @@
-import {CircleIcon, Span} from "../../../common";
+import {CircleIcon, Span} from "../../../common/index.js";
 import React from "react";
 
 const UserPostComponent = ({usr: userName, time}) => (

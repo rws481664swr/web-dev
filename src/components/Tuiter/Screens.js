@@ -1,6 +1,6 @@
 import NavigationSidebar from "./NavigationSidebar";
 export {default as HomeScreen} from './HomeScreen'
-export {default as ExploreScreen} from './ExploreScreen'
+export {default as ExploreScreen} from './ExploreScreen/index.js'
 
 export const UnderConstruction = ({name}) => {
     const active = name

@@ -1,7 +1,7 @@
 
 import React from "react";
-import UserPostComponent from "./UserPostComponent";
-import {Div} from "../../../common";
+import UserPostComponent from "./UserPostComponent.js";
+import {Div} from "../../../common/index.js";
 
 const PostSummaryText =({post: {topic, userName, time, title}})=><div className={'fw-bold'}>
     <Div className="wd-text-grey fw-normal" content={topic}/>

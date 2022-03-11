@@ -1,6 +1,6 @@
 import ExploreComponent from "./ExploreComponent.js";
-import WhoToFollowList from "../WhoToFollowList";
-import {ThreeCols} from "../common";
+import WhoToFollowList from "../WhoToFollowList/index.js";
+import {ThreeCols} from "../common/index.js";
 
 const ExploreScreen = () => {
     return (

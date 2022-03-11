@@ -1,5 +1,5 @@
 import posts from './content/posts.json'
-import PostListItem from './PostItem'
+import PostListItem from './PostItem.js'
 const PostList =()=>{
     return (
         <div>

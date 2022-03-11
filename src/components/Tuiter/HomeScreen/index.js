@@ -1,6 +1,6 @@
-import PostSummaryList from "../PostSummaryList";
-import PostList from "../PostList";
-import {ThreeCols} from "../common";
+import PostSummaryList from "../PostSummaryList/index.js";
+import PostList from "../PostList/index.js";
+import {ThreeCols} from "../common/index.js";
 
 const HomeScreen = () => {
     return (

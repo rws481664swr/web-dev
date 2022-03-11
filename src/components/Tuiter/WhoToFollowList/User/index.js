@@ -1,5 +1,5 @@
 import React from "react";
-import {HandleComponent, UserNameComponent} from "./subcomponents";
+import {HandleComponent, UserNameComponent} from "./subcomponents.js";
 
  const UserComponent = ({who: {userName, handle, avatarIcon}}) => {
      return (
