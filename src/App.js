@@ -5,8 +5,8 @@ import './App.css';
 import React from 'react'
 // import * as rr from "react-router";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {HelloWorld, Labs, Tuiter} from "./components";
-import {HomeScreen, UnderConstruction} from './components/Tuiter/Screens'
+import {HelloWorld, Labs, Tuiter} from "./components/index.js";
+import {HomeScreen, UnderConstruction} from './components/Tuiter/Screens.js'
 
 function App() {
 
@@ -19,14 +19,14 @@ function App() {
                     {/*    <Labs/>*/}
                     {/*</Route>*/}
 
-                    <Route path={"/hello"} exact={true} element={<HelloWorld/>}/>
+                    <Route path={"hello"} exact={true} element={<HelloWorld/>}/>
 
 
-                    <Route path={"/tuiter"} exact={true} element={<Tuiter/>}/>
+                    <Route path={"tuiter"} exact={true} element={<Tuiter/>}/>
 
 
                     {/*<Route path={"/tuiter/explore"} exact={true} element={ExploreScreen}/>*/}
-                    <Route path={"/tuiter/home"} exact={true} element={<HomeScreen/>}/>
+                    <Route path={"tuiter/home"} exact={true} element={<HomeScreen/>}/>
 
 
                     {/*Dummy Routes*/}
