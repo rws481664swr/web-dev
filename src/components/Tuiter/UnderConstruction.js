@@ -1,5 +1,4 @@
 const UnderConstruction = ({name}) => {
-    const active = name
     name = name[0].toUpperCase() + name.substring(1)
     return (
         <div className={'row'}>
