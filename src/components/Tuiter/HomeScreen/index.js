@@ -1,5 +1,5 @@
 import PostSummaryList from "../PostSummaryList/index.js";
-import PostList from "../PostList/index.js";
+import PostList from "../TuitList/index.js";
 import {ThreeCols} from "../common/index.js";
 
 const HomeScreen = () => {

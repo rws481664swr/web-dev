@@ -1,8 +1,10 @@
-import PostList from "../PostList/index.js";
-import {Span} from "../common/index.js";
+import TuitList from "../TuitList/index.js";
 
 const HomeScreenComponent = ()=>{
 return (
+    <>
+        <TuitList/>
+    </>
 )
 }
 export default HomeScreenComponent
