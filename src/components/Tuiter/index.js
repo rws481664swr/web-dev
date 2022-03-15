@@ -11,6 +11,7 @@ export {default as ExploreScreen} from './ExploreScreen/ExploreComponent.js'
 export {default as NotificationScreen} from './NotificationScreen/index.js'
 
 const reducer = combineReducers({
+     who: whoReducer
 });
 const store = createStore(reducer);
 const Tuiter = () => {
