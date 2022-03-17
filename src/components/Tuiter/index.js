@@ -5,6 +5,8 @@ import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 import WhoToFollowList from "./WhoToFollowList/index.js";
 
+
+
 export {default as UnderConstruction} from './UnderConstruction.js'
 export {default as HomeScreen} from './HomeScreen/HomeScreenComponent.js'
 export {default as ExploreScreen} from './ExploreScreen/ExploreComponent.js'
@@ -12,7 +14,7 @@ export {default as NotificationScreen} from './NotificationScreen/index.js'
 const reducers = combineReducers({
     who:whoReducer,
     nav:navReducer,
-    tuit:tuitReducer
+    tuits:tuitReducer
 })
 const store = createStore(reducers)
 const Tuiter = () => {
