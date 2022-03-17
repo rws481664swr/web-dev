@@ -14,7 +14,6 @@ import {
     NotificationScreen,
     UnderConstruction
 } from "./components/index.js";
-
 function App() {
     return (
         <BrowserRouter>
@@ -40,3 +39,4 @@ function App() {
     )
 }
 export default App;
+
