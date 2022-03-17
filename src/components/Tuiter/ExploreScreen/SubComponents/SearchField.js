@@ -1,9 +1,8 @@
 import React from "react";
-import {Span} from "../../common/index.js";
+import {CogIcon, MagGlass, Span} from "../../common/index.js";
 
-const MagGlass = () => <i className="  fa fa-search wd-fa-search-gr  wd-mag-glass"/>
 const SearchTextField = ({className}) => <input type="text" className={className} placeholder="Search Twitter"/>
-const CogIcon = ({className}) => <i className={`${className} fa fa-cog fa-2x fa-cog-inverted align-middle wd-gear`}/>
+
 export const SearchField = () => {
     return (
         <div className={'row'}>

@@ -1,4 +1,5 @@
 import React from "react";
+import {CheckedCircle} from "../../common/index.js";
 
 
 export const UserNameComponent = ({user}) => {
@@ -12,9 +13,7 @@ export const UserNameComponent = ({user}) => {
     )
 
 
-    function CheckedCircle() {
-        return (<i className="fa-solid fa-circle-check"/>);
-    }
+
 }
 export const HandleComponent = ({handle}) => {
     return (
