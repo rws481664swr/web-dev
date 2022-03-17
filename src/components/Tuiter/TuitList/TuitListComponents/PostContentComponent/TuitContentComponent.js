@@ -1,3 +1,12 @@
+import {VerifiedIcon} from "../../../common";
+
+function UserHandle({handle,time}) {
+    return (
+        <span className="wd-text-grey fw-normal">
+                    @{handle} - {time}
+                </span>
+    )
+}
 
 const TuitContentComponent = ({tweet: {userName, handle, time, text}}) => {
     return (
@@ -6,13 +15,8 @@ const TuitContentComponent = ({tweet: {userName, handle, time, text}}) => {
                 <span className="fw-bold text-white ">
                     {userName}
                 </span>
-                <span className="p-0 border-0, m-0 fa-stack ">
-                    <i className="fa-solid fa-certificate fa-stack-1x text-white"/>
-                    <i className="fa-solid fa-check   fa-stack-1x  text-black"/>
-                </span>
-                <span className="wd-text-grey fw-normal">
-                    @{handle} - {time}
-                </span>
+               <VerifiedIcon/>
+                <UserHandle handle={handle} time={time}/>
             </div>
 
             <div className='mt-0 pt-0 pb-2'>
