@@ -14,7 +14,6 @@ function NavList({active}) {
         console.log(`dispatched: ${JSON.stringify(payload)}`)
         dispatch(payload)
     }
-   // const  [__active , setActive] = useState('home')
     return (
         <ul className={"ps-0"}>
             {items.map((e,i) => <NavigationSidebarItem key={e+""+i}
@@ -22,7 +21,7 @@ function NavList({active}) {
                                                            () => on_click(e)
                                                        }
                                                active={sel.active} li_info={e}/> )}
-            <More/>
+            <More onclick={()=> on_click({id:'more'})} active={sel.active}/>
         </ul>
     )
 }
