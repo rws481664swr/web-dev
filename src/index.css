@@ -19,7 +19,9 @@ code {
 .wd-border-radius-20px{
   border-radius: 20px;
 }
-
+.wd-color-red{
+  color:red;
+}
 
 .wd13{
   font-size: 13px;
