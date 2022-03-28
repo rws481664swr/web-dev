@@ -8,14 +8,15 @@ function UserHandle({handle,time}) {
     )
 }
 
-const TuitContentComponent = ({tweet: {userName, handle, time, text}}) => {
+const TuitContentComponent = ({tuit}) => {
+    const {postedBy,handle,time, verified,tuit:text}= tuit
     return (
         <>
             <div className="pb-0 mb-0">
                 <span className="fw-bold text-white ">
-                    {userName}
+                    {postedBy.username}
                 </span>
-               <VerifiedIcon/>
+                {verified && <VerifiedIcon/>}
                 <UserHandle handle={handle} time={time}/>
             </div>
 

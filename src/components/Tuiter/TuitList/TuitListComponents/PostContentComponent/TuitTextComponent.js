@@ -1,4 +1,4 @@
-function TextComponent({text, title, link}) {
+function TextComponent({text, title, link=null}) {
 
     return (
         <div className="wd-text-grey p-2 m-2">

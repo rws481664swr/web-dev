@@ -1,19 +1,35 @@
 import TuitTextComponent from "./TuitTextComponent.js";
 
+function AttachmentComponent({attachments}) {
+    
+    const {video,image} =attachments
+    if (video){
+        return video &&
+            <iframe width="100%" height="350px"
+                    className="mt-0 wd-border-radius-20px  "
+                    style={{width: "100%"}}
+                    src={`https://www.youtube.com/embed/${video}`}
+                    title="YouTube video player" frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen/>
+    }else if(image){
+return <img src={image} width={'100%'}  height="350px" alt={'alt'} />
+    }else{
+        return <></>
+    }
+}
+
 const TuitContentComponent = (
-    {
-        data: {
-            image: {src},
-            content: {text = "", link, title}
-        }
-    }) => {
-    return (
-        <div className=" wd-border-1px wd-rounded-all">
-            <img
-                className={` wd-bottom-border-gray ${text ? "wd-border-round-top-only wd-bottom-border-gray" : " wd-rounded-all"}`}
-                src={src} alt={src} width="100%" height="auto"/>
-            {text && <TuitTextComponent text={text} title={title} link={link}/>}
-        </div>
+    {tuit}) => {
+
+    return (<>
+        {
+            tuit.attachments &&
+                <div className=" wd-border-1px wd-rounded-all">
+                    {tuit.attachments && < AttachmentComponent attachments={tuit.attachments}/>}
+                    {/*{tuit.tuit && <TuitTextComponent text={''/*tuit.tuit*!/ title={tuit.title}/>}*/}
+                </div>
+        }</>
     )
 }
 
