@@ -16,7 +16,7 @@ const EditProfile = () => {
         dateOfBirth,
         website,
     } = profile
-    let un = useNavigate()
+    let un = useNavigate('/tuiter/profile')
     const ymdTomdy = (date) => `${date[1]}/${date[2]}/${date[0]}`
     const dob2type = (dob) => `${dob[2]}-${dob[0]}-${dob[1]}`
     const [edits, editStates] = useState({

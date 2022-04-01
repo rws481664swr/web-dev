@@ -1,4 +1,4 @@
-import {VerifiedIcon} from "../../../common";
+import {VerifiedIcon} from "../../../common/index.js";
 
 function UserHandle({handle, time}) {
     return (

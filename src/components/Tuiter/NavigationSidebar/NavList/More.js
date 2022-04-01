@@ -1,9 +1,6 @@
 import {Link} from "react-router-dom";
 
 function More({active='', onclick}) {
-    // function MoreIcon(){
-    //     return  ()
-    // }
     console.log("more", active)
     return (
         <Link to={'/tuiter/more'}
