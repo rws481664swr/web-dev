@@ -3,7 +3,7 @@ import {useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
 import '../../../styles/edit-pro.css'
 
-const EditProfile = ({}) => {
+const EditProfile = () => {
     const dispatch = useDispatch();
     const profile = useSelector(x => x.pro)
     const {
@@ -47,21 +47,7 @@ const EditProfile = ({}) => {
                     className={'align-self-center fw-bold btn btn-dark bg-white rounded-pill'}>
                     Save
                 </button>
-                {/*<div className={'col-2 '}>*/}
-                {/*    <Link to={'/tuiter/profile'}>*/}
-                {/*        <i className=" text-white fa  fa-2x fa-x"/>*/}
-                {/*    </Link>*/}
-                {/*</div>*/}
 
-                {/*<div className={'col-7'}><h3 children={`${firstName} ${lastName}`}/></div>*/}
-
-                {/*<div  className={'col-3'}>*/}
-                {/*    <button onClick={save}*/}
-
-                {/*            className={'align-self-center justify-content-end btn border-white btn-default rounded-pill'}>*/}
-                {/*        Save*/}
-                {/*    </button>*/}
-                {/*</div>*/}
             </div>
             <div className={'position-relative py-4'}>
                 <img className={'h-auto'} width={'100%'} src={bannerPicture} alt={'banner'}/>

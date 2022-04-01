@@ -1,2 +1,2 @@
-
-export default()=>{return <div></div>}
+const EmptyDiv=()=>{return <div></div>}
+export default EmptyDiv

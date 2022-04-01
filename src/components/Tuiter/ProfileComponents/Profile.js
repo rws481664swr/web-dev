@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 
 
-const Profile = ({}) => {
+const Profile = () => {
     const profile = useSelector(x => x.pro)
     const {
         firstName,

@@ -13,7 +13,7 @@ const WhatsHappening = () => {
     return <div  className={"my-1 d-flex justify-content-start"}>
 
 
-        <img className={ " mx-2 rounded-circle"} width="48px" height="48px" src={'/images/elon.jpg'}/>
+        <img className={ " mx-2 rounded-circle"} width="48px" height="48px" src={'/images/elon.jpg'} alt={'alt'}/>
       <div className={' w-100'}>
           <textarea
 

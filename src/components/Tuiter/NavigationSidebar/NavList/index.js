@@ -3,10 +3,10 @@ import NavigationSidebarItem from "./NavigationSidebarItem.js";
 import More from './More.js'
 import {useDispatch, useSelector} from "react-redux";
 import React from "react";
-import {NavIcon} from "./NavSubComponents";
+import {NavIcon} from "./NavSubComponents.js";
 import {Link} from "react-router-dom";
 
-function NavList({}) {
+function NavList() {
     const sel = useSelector((e) => e.nav)
 
     const dispatch = useDispatch()
