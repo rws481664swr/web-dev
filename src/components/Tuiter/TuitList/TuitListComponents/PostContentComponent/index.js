@@ -1,4 +1,3 @@
-import TuitTextComponent from "./TuitTextComponent.js";
 
 function AttachmentComponent({attachments}) {
     
@@ -27,7 +26,6 @@ const TuitContentComponent = (
             tuit.attachments &&
                 <div className=" wd-border-1px wd-rounded-all">
                     {tuit.attachments && < AttachmentComponent attachments={tuit.attachments}/>}
-                    {/*{tuit.tuit && <TuitTextComponent text={''/*tuit.tuit*!/ title={tuit.title}/>}*/}
                 </div>
         }</>
     )

@@ -1,6 +1,6 @@
 import {VerifiedIcon} from "../../../common";
 
-function UserHandle({handle,time}) {
+function UserHandle({handle, time}) {
     return (
         <span className="wd-text-grey fw-normal">
                     @{handle} - {time}
@@ -9,7 +9,7 @@ function UserHandle({handle,time}) {
 }
 
 const TuitContentComponent = ({tuit}) => {
-    const {postedBy,handle,time, verified,tuit:text}= tuit
+    const {postedBy, handle, time, verified, tuit: text} = tuit
     return (
         <>
             <div className="pb-0 mb-0">

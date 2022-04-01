@@ -1,3 +1,4 @@
+/*
 function TextComponent({text, title, link=null}) {
 
     return (
@@ -12,3 +13,4 @@ function TextComponent({text, title, link=null}) {
     )
 }
 export default TextComponent
+*/

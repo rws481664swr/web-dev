@@ -26,9 +26,6 @@ const Profile = ({}) => {
 
     return (<>
         <div className={'d-flex'}>
-            {/*<Link to={'/tuiter/home'}>*/}
-            {/*    <i className=" text-white fa fa-2x fa-arrow-left"  />*/}
-            {/*</Link>*/}
             <h3 children={name}/>
         </div>
 
@@ -99,9 +96,7 @@ const Month = [
     'December'
 ]
 function dateToString(date) {
-    let _date =       Date.parse(date)
-
-    date=date.split('/').map(e=> parseInt(e))//.map(parseInt)
+    date=date.split('/').map(e=> parseInt(e))
     let day=0,month,yr
     if (date.length===2){
      [month,yr ]= date
