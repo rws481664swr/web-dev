@@ -1,0 +1,11 @@
+ul{
+    list-style: none;
+    padding-left:0 ;
+}
+input{
+    background-color: black;
+    color:white;
+    border-radius: 5%;
+}
+
+

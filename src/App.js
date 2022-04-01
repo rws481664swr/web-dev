@@ -11,9 +11,10 @@ import {
     Tuiter,
     HomeScreen,
     ExploreScreen,
-    NotificationScreen,
     UnderConstruction
 } from "./components/index.js";
+import Profile from "./components/Tuiter/ProfileComponents/Profile";
+import EditProfile from "./components/Tuiter/ProfileComponents/EditProfile";
 function App() {
     return (
         <BrowserRouter>
@@ -25,11 +26,12 @@ function App() {
                         <Route path={'tuiter'} element={<Tuiter/>}>
                             <Route index path={'explore'} element={<ExploreScreen/>}/>
                             <Route path={'home'} element={<HomeScreen/>}/>
-                            <Route path={'notifications'} element={<NotificationScreen/>}/>
+                            <Route path={'notifications'} element={<UnderConstruction name={'notifications'}/>}/>
                             <Route path={'messages'} element={<UnderConstruction name={'messages'}/>}/>
                             <Route path={'bookmarks'} element={<UnderConstruction name="bookmarks"/>}/>
                             <Route path={'lists'} element={<UnderConstruction name="lists"/>}/>
-                            <Route path={'profile'} element={<UnderConstruction name="profile"/>}/>
+                            <Route path={'profile'} element={<Profile/>}/>
+                            <Route path={'edit-profile'} element={<EditProfile/>}/>
                             <Route path={'more'} element={<UnderConstruction name="more"/>}/>
                         </Route>
                     </Route>

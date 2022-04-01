@@ -1,6 +1,6 @@
 import {Outlet} from "react-router-dom";
 import NavigationSidebar from "./NavigationSidebar/index.js";
-import {whoReducer,navReducer, tuitReducer} from "../../reducers/index.js";
+import {whoReducer,navReducer, tuitReducer,profileReducer} from "../../reducers/index.js";
 import {combineReducers, createStore} from "redux";
 import {Provider} from "react-redux";
 import WhoToFollowList from "./WhoToFollowList/index.js";
@@ -14,7 +14,8 @@ export {default as NotificationScreen} from './NotificationScreen/index.js'
 const reducers = combineReducers({
     who:whoReducer,
     nav:navReducer,
-    tuits:tuitReducer
+    tuits:tuitReducer,
+    pro:profileReducer,
 })
 const store = createStore(reducers)
 const Tuiter = () => {
@@ -27,7 +28,6 @@ const Tuiter = () => {
                 </div>
                 <div className="col-10 col-lg-7 col-xl-6">
                     <Outlet/>
-                    {/*OUTLET*/}
                 </div>
                 <div className="d-none d-lg-block col-lg-4 col-xl-4">
                     <WhoToFollowList/>

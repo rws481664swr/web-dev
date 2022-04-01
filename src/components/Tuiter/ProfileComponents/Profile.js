@@ -26,9 +26,9 @@ const Profile = ({}) => {
 
     return (<>
         <div className={'d-flex'}>
-            <Link to={'/tuiter/home'}>
-                <i className=" text-white fa fa-2x fa-arrow-left" aria-hidden="true"/>
-            </Link>
+            {/*<Link to={'/tuiter/home'}>*/}
+            {/*    <i className=" text-white fa fa-2x fa-arrow-left"  />*/}
+            {/*</Link>*/}
             <h3 children={name}/>
         </div>
 
@@ -77,6 +77,7 @@ const Profile = ({}) => {
                 <span className={'text-white fw-bold'}> {followersCount} </span>
                 Followers
             </li>
+              <li><Link to={website}>My Website : {website}</Link></li>
         </ul>
 
 
