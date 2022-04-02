@@ -25,6 +25,7 @@ function App() {
                         <Route path="hello" element={<HelloWorld/>}/>
                         <Route path={'tuiter'} element={<Tuiter/>}>
                             <Route index element={<HomeScreen/>}/>
+                            <Route path={'home'} element={<HomeScreen/>}/>
                             <Route path={'explore'} element={<ExploreScreen/>}/>
                             <Route path={'notifications'} element={<UnderConstruction name={'notifications'}/>}/>
                             <Route path={'messages'} element={<UnderConstruction name={'messages'}/>}/>
