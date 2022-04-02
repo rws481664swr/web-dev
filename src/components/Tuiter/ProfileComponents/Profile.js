@@ -1,4 +1,4 @@
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
 
 
@@ -6,6 +6,8 @@ import {Link} from "react-router-dom";
 
 
 const Profile = () => {
+    useDispatch()({type:'nav',active:'profile'})
+
     const profile = useSelector(x => x.pro)
     const {
         firstName,

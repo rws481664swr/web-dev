@@ -16,7 +16,7 @@ const reducers = combineReducers({
     nav:navReducer,
     tuits:tuitReducer,
     pro:profileReducer,
-})
+ })
 const store = createStore(reducers)
 const Tuiter = () => {
     return (

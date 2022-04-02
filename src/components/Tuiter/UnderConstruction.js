@@ -1,4 +1,8 @@
+import {useDispatch} from "react-redux";
+
 const UnderConstruction = ({name}) => {
+    useDispatch()({type:'nav',active:name})
+
     name = name[0].toUpperCase() + name.substring(1)
     return (
         <div className={'row'}>

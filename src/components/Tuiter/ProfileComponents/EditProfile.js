@@ -5,6 +5,8 @@ import '../../../styles/edit-pro.css'
 
 const EditProfile = () => {
     const dispatch = useDispatch();
+    dispatch({type:'nav',active:'profile'})
+
     const profile = useSelector(x => x.pro)
     const {
         firstName,
