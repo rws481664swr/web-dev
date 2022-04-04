@@ -1,11 +1,15 @@
-import TuitListItem from './PostItem.js'
-import {useDispatch, useSelector} from "react-redux";
+ import {useDispatch, useSelector} from "react-redux";
 import {AvatarComponent, ContentComponent, ReactionComponent, TuitContentComponent} from "./TuitListComponents";
+ import {useEffect} from "react";
+ import {deleteTuit, findAllTuits} from "../../../actions/tuits-actions";
 const PostList =()=>{
     const tuits = useSelector(s=>s.tuits)
+
     const dispatch = useDispatch()
-    const deleteTuite = (tuit)=> dispatch ({type:'delete-tuit', tuit})
-    return (
+
+    useEffect( ()=>findAllTuits   (dispatch)   , [dispatch]);
+
+      return (
     <div className={'list-group'}>
         {tuits.map(
             (tuit)=>
@@ -16,7 +20,7 @@ const PostList =()=>{
                 <ContentComponent tuit={tuit}/>
                 <ReactionComponent tuit={tuit}/>
             </div>
-            <i onClick={() => deleteTuite(tuit)} className="fas fa-remove  fa-pull-right"/>
+            <i onClick={() => deleteTuit (dispatch,tuit)} className="fas fa-remove  fa-pull-right"/>
         </div>)
         }
     </div>

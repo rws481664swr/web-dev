@@ -1,13 +1,15 @@
 import {useState} from "react";
 
 import {useDispatch} from "react-redux";
+import {CREATE_TUIT, createTuit} from "../../actions/tuits-actions";
 
 const TuitButton = ({onClick,cn})=><button className={cn||''} onClick={onClick}>Tuit</button>
 const WhatsHappening = () => {
     const dispatch = useDispatch()
 
     let [whatsHappening, setWhatsHappening]    = useState('');
-    const tuitClickHandler = () => { dispatch({type:'create-tuit',tuit:whatsHappening}) }
+    const tuitClickHandler = () =>  createTuit(dispatch,{type: CREATE_TUIT,tuit:whatsHappening })
+
     const onChangeSet = (event)=> setWhatsHappening(event.target.value)
 
     return <div  className={"my-1 d-flex justify-content-start"}>
