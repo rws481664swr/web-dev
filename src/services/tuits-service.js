@@ -1,6 +1,6 @@
 import axios from "axios";
 // const {get} = axios
-const BASE_URL = process.env.NUID ? 'http://localhost:4000' : 'https://sraph-web-dev-backend.herokuapp.com/'
+const BASE_URL = process.env.NUID ? 'http://localhost:4000' : 'https://sraph-web-dev-backend.herokuapp.com'
 
 const TUITS_API_REST = '/api/tuits'
 const TUITS_API = `${BASE_URL}${TUITS_API_REST}`
