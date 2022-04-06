@@ -44,7 +44,7 @@ function Thumbs({tuit, direction, _key, statKey, colorClass}) {
 
                 const newTuit = {...tuit}
                 newTuit[_key] = !newTuit[_key]
-                newTuit.stats[statKey] += tuit[_key] ? 1 : -1
+                newTuit.stats[statKey] += newTuit[_key] ? 1 : -1
                 updateTuit(dispatch, newTuit)
             }
             }
