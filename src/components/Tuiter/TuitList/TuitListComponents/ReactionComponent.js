@@ -9,9 +9,8 @@ const ReactionComponent = ({tuit}) => {
             <div className="d-flex justify-content-evenly">
                 <ReactionSubComponent quantity={tuit.stats.comments} fa={"  wd-pe6 fa-regular   fa-comment"}/>
                 <ReactionSubComponent quantity={tuit.stats.retuits} fa={"   wd-ps-6 wd-pe6  fa-solid    fa-retweet"}/>
-                <Thumbs tuit={tuit} colorClass={'text-success'} _key={'liked'} direction={'up'} statKey={'likes'}/>
-                <Thumbs tuit={tuit} colorClass={'text-danger'} _key={'disliked'} direction={'down'}
-                        statKey={'dislikes'}/>
+                <Thumbs tuit={tuit}/>
+
 
                 <ReactionSubComponent fa={"fa-solid   fa-arrow-up-from-bracket"}/>
 
@@ -34,24 +33,39 @@ function ReactionSubComponent({children, quantity, fa}) {
     )
 }
 
-function Thumbs({tuit, direction, _key, statKey, colorClass}) {
+function Thumbs({tuit   }) {
     const dispatch = useDispatch()
     return (
 
-
+        <>
         <span
             onClick={() => {
 
                 const newTuit = {...tuit}
-                newTuit[_key] = !newTuit[_key]
-                newTuit.stats[statKey] += newTuit[_key] ? 1 : -1
+                newTuit.liked = !tuit.liked
+                newTuit.stats.likes += newTuit.liked ? 1 : -1
                 updateTuit(dispatch, newTuit)
             }
             }
             className={`mx-4`}>
-                <i className={`  ${tuit[_key] && colorClass} fas  wd-ps-6 wd-pe6  fa-solid    fa-thumbs-${direction}`}/>
-            { <span className="wd-ps-6 wd-pe6 ">{tuit.stats[statKey]||0}</span>}
-            </span>)
+                <i className={`  ${tuit.liked && 'text-success'} fas  wd-ps-6 wd-pe6  fa-solid    fa-thumbs-up`}/>
+            {<span className="wd-ps-6 wd-pe6 ">{tuit.stats.likes || 0}</span>}
+            </span>
+            <span
+                onClick={() => {
+
+                    const newTuit = {...tuit}
+                    newTuit.disliked = !tuit.disliked
+                    newTuit.stats.dislikes += newTuit.disliked ? 1 : -1
+                    updateTuit(dispatch, newTuit)
+                }
+                }
+                className={`mx-4`}>
+                <i className={`  ${tuit.disliked && 'text-danger'} fas  wd-ps-6 wd-pe6  fa-solid    fa-thumbs-down`}/>
+                {<span className="wd-ps-6 wd-pe6 ">{tuit.stats.dislikes || 0}</span>}
+            </span>
+        </>
+    )
 
 
 }
