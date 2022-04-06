@@ -5,7 +5,7 @@ import '../../../styles/edit-pro.css'
 
 const EditProfile = () => {
     const dispatch = useDispatch();
-    dispatch({type:'nav',active:'profile'})
+    dispatch({type: 'nav', active: 'profile'})
 
     const profile = useSelector(x => x.pro)
     const {
@@ -38,9 +38,9 @@ const EditProfile = () => {
         <>
             <div className={'d-flex justify-content-between'}>
                 <div className={'d-flex justify-content-start'}>
-                     <div className={'me-4 align-self-center'}>   <Link to={'/tuiter/profile'}  >
-                            <i className=" text-white fa  fa-2x fa-x"/>
-                        </Link></div>
+                    <div className={'me-4 align-self-center'}><Link to={'/tuiter/profile'}>
+                        <i className=" text-white fa  fa-2x fa-x"/>
+                    </Link></div>
 
                     <h3 className={'align-self-middle'} children={`${firstName} ${lastName}`}/>
                 </div>
@@ -95,12 +95,7 @@ const EditProfile = () => {
                 <label className={'form-label'} htmlFor={'dob'}>DOB</label>
 
                 <input value={edits.dateOfBirth} type={'date'} id={'dob'}
-                       onChange={e => {
-                           let split = e.target.value.split('-')
-                           editStates({...edits, dateOfBirth: e.target.value})
-
-                       }
-                       }
+                       onChange={e => editStates({...edits, dateOfBirth: e.target.value})}
                 />
 
                 <label className={'form-label'} htmlFor={'website'}>Website</label>
