@@ -1,5 +1,5 @@
 import React from "react";
-import {useDispatch } from "react-redux";
+import {useDispatch} from "react-redux";
 import {updateTuit} from "../../../../actions/tuits-actions";
 
 const ReactionComponent = ({tuit}) => {
@@ -36,8 +36,6 @@ function ReactionSubComponent({children, quantity, fa}) {
 
 function Thumbs({tuit, direction, _key, statKey, colorClass}) {
     const dispatch = useDispatch()
-    console.log(tuit, direction, _key, statKey, colorClass)
-
     return (
 
 
@@ -52,8 +50,7 @@ function Thumbs({tuit, direction, _key, statKey, colorClass}) {
             }
             className={`mx-4`}>
                 <i className={`  ${tuit[_key] && colorClass} fas  wd-ps-6 wd-pe6  fa-solid    fa-thumbs-${direction}`}/>
-            {
-                <span className="wd-ps-6 wd-pe6 ">{tuit.stats[statKey]}</span>}
+            { <span className="wd-ps-6 wd-pe6 ">{tuit.stats[statKey]||0}</span>}
             </span>)
 
 

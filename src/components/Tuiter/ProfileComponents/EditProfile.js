@@ -97,9 +97,8 @@ const EditProfile = () => {
                 <input value={edits.dateOfBirth} type={'date'} id={'dob'}
                        onChange={e => {
                            let split = e.target.value.split('-')
-                           console.log(split)
                            editStates({...edits, dateOfBirth: e.target.value})
-                           console.log(e.target.value)
+
                        }
                        }
                 />
