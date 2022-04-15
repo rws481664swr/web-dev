@@ -10,9 +10,8 @@ const tuitReducer = (state = [], action) => {
 
         case CREATE_TUIT:
             return [
-                action.newTuit,
-                ...state
-
+                ...state,
+                action.newTuit
             ];
 
         case UPDATE_TUIT:
